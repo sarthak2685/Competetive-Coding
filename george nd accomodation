@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{ int n,i,count=0,k;
+  cin>>n;
+  int A[n][n];
+  for(i=0;i<n;i++){
+      for(int j=0;j<2;j++){
+          cin>>A[i][j];
+      }
+  }
+   for(i=0;i<n;i++){
+      for(int j=0;j<2;j++){
+          if(A[i][j]<A[i][j+1]){ 
+              k=abs(A[i][j]-A[i][j+1]);
+              if(k>=2) count++;
+              
+              break;
+          }
+          else break;
+      }
+   }
+      cout<<count;
+    return 0;
+}
