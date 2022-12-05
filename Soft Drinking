@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n, k, l, c, d, p, nl, np;
+    cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+    int a,b,q,h,g;
+    a=k*l;
+    b=a/nl;
+    q=c*d;
+    h=p/np;
+    g=min(b,min(q,h))/n;
+    cout<<g;
+    
+    return 0;
+}
